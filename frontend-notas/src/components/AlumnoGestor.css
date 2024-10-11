@@ -1,0 +1,96 @@
+/* Contenedor principal */
+.alumno-gestor-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilos para los inputs y el formulario */
+  form {
+    margin-bottom: 20px;
+  }
+  
+  form .MuiTextField-root {
+    margin-bottom: 15px;
+  }
+  
+  form button {
+    margin-right: 10px;
+  }
+  
+  /* Estilos para la tabla */
+  .table-container {
+    max-height: 400px; /* Altura máxima de la tabla */
+    overflow-y: auto;  /* Scroll vertical */
+    overflow-x: auto;  /* Scroll horizontal, en caso de que sea necesario */
+    border: 1px solid #ddd;
+  }
+  
+  .responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .responsive-table th, .responsive-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .responsive-table th {
+    background-color: #f5f5f5;
+  }
+  
+  .responsive-table td {
+    text-align: center;
+  }
+  
+  /* Botones de acción */
+  .btn-editar, .btn-eliminar {
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 5px;
+  }
+  
+  .btn-eliminar {
+    background-color: #dc3545;
+  }
+  
+  .btn-editar:hover, .btn-eliminar:hover {
+    opacity: 0.8;
+  }
+  
+  /* Estilos para las flechas de los inputs numéricos */
+  .no-arrows::-webkit-outer-spin-button,
+  .no-arrows::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .no-arrows {
+    -moz-appearance: textfield;
+  }
+  
+  /* Estilos responsivos para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .responsive-table th, .responsive-table td {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    .alumno-gestor-container {
+      padding: 10px;
+    }
+  
+    .btn-editar, .btn-eliminar {
+      padding: 5px;
+      font-size: 12px;
+    }
+  }
+  
